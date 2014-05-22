@@ -17,20 +17,26 @@ public class playerController : MonoBehaviour {
 		if (vertical > 0)
 		{
 			animator.SetInteger("Direction", 2);
-			if(Input.GetKeyUp("up")){
-			}
+			animator.SetFloat("Change", 1.0f);
 		}
 		else if (vertical < 0)
 		{
 			animator.SetInteger("Direction", 0);
+			animator.SetFloat("Change", 1.0f);
 		}
 		else if (horizontal > 0)
 		{
 			animator.SetInteger("Direction", 3);
+			animator.SetFloat("Change", 1.0f);
 		}
 		else if (horizontal < 0)
 		{
 			animator.SetInteger("Direction", 1);
+			animator.SetFloat("Change", 1.0f);
+		}
+		else
+		{
+			animator.SetFloat("Change", 0.0f);
 		}
 	}
 }
