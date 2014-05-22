@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TileEditor\Scripts\Editor\TileMapEditor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player Movment Assets\Movement.js">
     <Files>
-      <File FileName="Assets\TileEditor\Scripts\Editor\TileMapEditor.cs" Line="1" Column="1" />
+      <File FileName="Assets\Player Movment Assets\Movement.js" Line="13" Column="2" />
+      <File FileName="Assets\Player Movment Assets\OverheadCamera.js" Line="20" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
