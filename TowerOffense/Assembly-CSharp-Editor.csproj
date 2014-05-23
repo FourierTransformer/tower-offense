@@ -63,6 +63,7 @@
      <None Include="Assets\Resources\Examples\Isometric\iso-test-objectgroup.xml" />
      <None Include="Assets\Resources\Examples\orthogonal-test5.xml" />
      <None Include="Assets\Resources\Examples\small_test-CSV.xml" />
+     <None Include="Assets\Resources\GameMaps\Cave.xml" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
      <None Include="Assets\Resources\Examples\orthogonal-test1.xml" />
      <None Include="Assets\Resources\Examples\Isometric\iso-staggered-test.xml" />
@@ -88,6 +89,9 @@
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
      <None Include="Assets\Resources\Examples\orthogonal-test3.xml" />
      <None Include="Assets\Resources\Examples\small_test_multiple_tilesets.xml" />
+ <Reference Include="Ionic.Zlib">
+ <HintPath>Assets\X-UniTMX\Ionic.Zlib.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -105,9 +109,6 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:\Program Files (x86)\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="Ionic.Zlib">
- <HintPath>Assets\X-UniTMX\Ionic.Zlib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

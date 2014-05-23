@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="32" tileheight="32">
- <tileset firstgid="1" name="Mage_City_Tileset_by_Hyptosis" tilewidth="32" tileheight="32">
-  <image source="Mage_City_Tileset_by_Hyptosis.png" trans="ffffff" width="1280" height="1280"/>
+ <tileset firstgid="1" name="ArenaPreview" tilewidth="32" tileheight="32">
+  <image source="ArenaPreview.png" trans="ffffff" width="1280" height="1280"/>
   <tile id="148">
    <properties>
     <property name="Collision" value="1"/>

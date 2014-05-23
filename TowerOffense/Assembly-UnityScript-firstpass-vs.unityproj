@@ -72,6 +72,7 @@
      <None Include="Assets\Resources\Examples\Isometric\iso-test-objectgroup.xml" />
      <None Include="Assets\Resources\Examples\orthogonal-test5.xml" />
      <None Include="Assets\Resources\Examples\small_test-CSV.xml" />
+     <None Include="Assets\Resources\GameMaps\Cave.xml" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
      <None Include="Assets\Resources\Examples\orthogonal-test1.xml" />
      <None Include="Assets\Resources\Examples\Isometric\iso-staggered-test.xml" />
