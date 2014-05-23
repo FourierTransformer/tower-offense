@@ -25,6 +25,12 @@ public class playerController : MonoBehaviour {
 			if(Input.GetMouseButtonUp(0)){
 				animator.SetInteger("Attack", -1);
 			}
+			if(Input.GetMouseButtonDown(1)){
+				animator.SetInteger("BowAttack", 2);
+			}
+			if(Input.GetMouseButtonUp(1)){
+				animator.SetInteger("BowAttack", -1);
+			}
 		}
 		else if (vertical < 0)
 		{
@@ -35,6 +41,12 @@ public class playerController : MonoBehaviour {
 			}
 			if(Input.GetMouseButtonUp(0)){
 				animator.SetInteger("Attack", -1);
+			}
+			if(Input.GetMouseButtonDown(1)){
+				animator.SetInteger("BowAttack", 0);
+			}
+			if(Input.GetMouseButtonUp(1)){
+				animator.SetInteger("BowAttack", -1);
 			}
 		}
 		else if (horizontal > 0)
@@ -47,6 +59,12 @@ public class playerController : MonoBehaviour {
 			if(Input.GetMouseButtonUp(0)){
 				animator.SetInteger("Attack", -1);
 			}
+			if(Input.GetMouseButtonDown(1)){
+				animator.SetInteger("BowAttack", 3);
+			}
+			if(Input.GetMouseButtonUp(1)){
+				animator.SetInteger("BowAttack", -1);
+			}
 		}
 		else if (horizontal < 0)
 		{
@@ -58,6 +76,12 @@ public class playerController : MonoBehaviour {
 			if(Input.GetMouseButtonUp(0)){
 				animator.SetInteger("Attack", -1);
 			}
+			if(Input.GetMouseButtonDown(1)){
+				animator.SetInteger("BowAttack", 1);
+			}
+			if(Input.GetMouseButtonUp(1)){
+				animator.SetInteger("BowAttack", -1);
+			}
 		}
 		else
 		{
@@ -67,6 +91,12 @@ public class playerController : MonoBehaviour {
 			}
 			if(Input.GetMouseButtonUp(0)){
 				animator.SetInteger("Attack", -1);
+			}
+			if(Input.GetMouseButtonDown(1)){
+				animator.SetInteger("BowAttack", animator.GetInteger("Direction"));
+			}
+			if(Input.GetMouseButtonUp(1)){
+				animator.SetInteger("BowAttack", -1);
 			}
 		}
 	}
