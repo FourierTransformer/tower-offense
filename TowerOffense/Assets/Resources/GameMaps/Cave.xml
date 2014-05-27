@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="30" height="30" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="pubdlcnt" tilewidth="32" tileheight="32">
-  <image source="../../../../../DirtyGame-develop/CleanGame/Content/pubdlcnt" width="416" height="502"/>
+  <image source="pubdlcnt.png" width="416" height="502"/>
   <tile id="20">
    <properties>
     <property name="Collision" value="1"/>
@@ -1981,4 +1981,32 @@
    <tile gid="182"/>
   </data>
  </layer>
+ <objectgroup name="Collisions" width="30" height="30">
+  <object x="224" y="0" width="128" height="224"/>
+  <object x="576" y="384" width="32" height="32"/>
+  <object x="544" y="448" width="128" height="64"/>
+  <object x="352" y="480" width="224" height="64"/>
+  <object x="352" y="416" width="32" height="64"/>
+  <object x="352" y="288" width="32" height="96"/>
+  <object x="384" y="288" width="192" height="32"/>
+  <object x="544" y="320" width="128" height="32"/>
+  <object x="640" y="352" width="32" height="32"/>
+  <object x="640" y="416" width="32" height="32"/>
+  <object x="736" y="544" width="32" height="32"/>
+  <object x="832" y="320" width="32" height="32"/>
+  <object x="608" y="128" width="32" height="32"/>
+  <object x="256" y="352" width="32" height="32"/>
+  <object x="96" y="512" width="32" height="32"/>
+  <object x="288" y="576" width="32" height="32"/>
+  <object x="576" y="672" width="224" height="32"/>
+  <object x="768" y="704" width="32" height="128"/>
+  <object x="576" y="704" width="32" height="224"/>
+  <object x="32" y="704" width="288" height="160"/>
+  <object x="864" y="64" width="64" height="128"/>
+  <object x="736" y="32" width="192" height="32"/>
+  <object x="0" y="0" width="960" height="32"/>
+  <object x="0" y="928" width="960" height="32"/>
+  <object x="0" y="0" width="32" height="960"/>
+  <object x="928" y="0" width="32" height="960"/>
+ </objectgroup>
 </map>
