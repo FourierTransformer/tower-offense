@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var speed = 5.0;
 
