@@ -1,0 +1,20 @@
+﻿<Properties>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player Movment Assets\Movement.js">
+    <Files>
+      <File FileName="Assets\Player Movment Assets\Movement.js" Line="13" Column="2" />
+      <File FileName="Assets\Player Movment Assets\OverheadCamera.js" Line="20" Column="4" />
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerController.cs">
+    <Files>
+      <File FileName="Assets\playerController.cs" Line="96" Column="70" />
+>>>>>>> master
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
