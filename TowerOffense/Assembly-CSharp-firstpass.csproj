@@ -49,20 +49,50 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Resources\Examples\small_test-new-features.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="Assets\Resources\Examples\orthogonal-test1_tileset.txt" />
+     <None Include="Assets\Resources\Examples\small_test.xml" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Resources\Examples\small_test-Base64-gzip.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Resources\Examples\Isometric\DifferentIsoTest02.xml" />
+     <None Include="Assets\Resources\Examples\Isometric\iso-test-objectgroup.xml" />
+     <None Include="Assets\Resources\Examples\orthogonal-test5.xml" />
+     <None Include="Assets\Resources\Examples\small_test-CSV.xml" />
+     <None Include="Assets\Resources\GameMaps\Cave.xml" />
+     <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\Examples\orthogonal-test1.xml" />
+     <None Include="Assets\Resources\Examples\Isometric\iso-staggered-test.xml" />
+     <None Include="Assets\Resources\Examples\ortho-tile-property.xml" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Resources\Examples\small_test-Base64-zlib.xml" />
+     <None Include="Assets\Resources\Examples\ortho-rotation-test.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
+     <None Include="Assets\Resources\Examples\Isometric\DifferentIsoTest01.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="Assets\Resources\Examples\orthogonal-test4.xml" />
+     <None Include="Assets\Resources\GameMaps\Arena.xml" />
+     <None Include="Assets\Resources\Examples\Isometric\iso-test2.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
+     <None Include="Assets\Resources\Examples\small_test_multipleLayers.xml" />
+     <None Include="Assets\Resources\Examples\ortho-objects.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
+     <None Include="Assets\Resources\Examples\Isometric\Home.xml" />
+     <None Include="Assets\Resources\Examples\small_test-Base64-uncompressed.xml" />
+     <None Include="Assets\Resources\GameMaps\Desert1.xml" />
+     <None Include="Assets\Resources\GameMaps\Desert2.xml" />
      <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Resources\Examples\orthogonal-test3.xml" />
+     <None Include="Assets\Resources\Examples\small_test_multiple_tilesets.xml" />
+ <Reference Include="Ionic.Zlib">
+ <HintPath>Assets\X-UniTMX\Ionic.Zlib.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

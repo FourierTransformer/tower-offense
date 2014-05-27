@@ -1,8 +1,8 @@
-<Properties>
+﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player Movment Assets\OverheadCamera.js">
     <Files>
-      <File FileName="Assets\playerController.cs" Line="96" Column="70" />
+      <File FileName="Assets\Player Movment Assets\OverheadCamera.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
