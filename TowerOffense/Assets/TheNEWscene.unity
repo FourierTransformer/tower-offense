@@ -2472,6 +2472,7 @@ GameObject:
   - 4: {fileID: 60281020}
   - 212: {fileID: 60281019}
   - 95: {fileID: 60281018}
+  - 61: {fileID: 60281021}
   m_Layer: 0
   m_Name: meleemonster
   m_TagString: Untagged
@@ -2529,6 +2530,17 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &60281021
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60281017}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .400000006, y: .639999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &61555905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4600,6 +4612,7 @@ GameObject:
   - 4: {fileID: 105982977}
   - 212: {fileID: 105982976}
   - 95: {fileID: 105982975}
+  - 61: {fileID: 105982978}
   m_Layer: 0
   m_Name: landminedropper
   m_TagString: Untagged
@@ -4657,6 +4670,17 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &105982978
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105982974}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .400000006, y: .639999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &107991415
 GameObject:
   m_ObjectHideFlags: 0
@@ -8242,6 +8266,7 @@ GameObject:
   - 4: {fileID: 194477127}
   - 212: {fileID: 194477126}
   - 95: {fileID: 194477125}
+  - 61: {fileID: 194477128}
   m_Layer: 0
   m_Name: archer
   m_TagString: Untagged
@@ -8299,6 +8324,17 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &194477128
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194477124}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .400000006, y: .639999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &195947099
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,6 +9128,10 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 597986572}
+    - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
   m_RootGameObject: {fileID: 1951104883}
@@ -29245,6 +29285,7 @@ GameObject:
   - 4: {fileID: 625064797}
   - 212: {fileID: 625064796}
   - 95: {fileID: 625064795}
+  - 61: {fileID: 625064798}
   m_Layer: 0
   m_Name: grenadier
   m_TagString: Untagged
@@ -29302,6 +29343,17 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!61 &625064798
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625064794}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: .400000006, y: .639999986}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &625302650
 GameObject:
   m_ObjectHideFlags: 0
@@ -33151,6 +33203,44 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 7, y: 1}
   m_Center: {x: 3.5, y: -.5}
+--- !u!1 &717314771
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 717314772}
+  - 61: {fileID: 717314773}
+  m_Layer: 0
+  m_Name: Collisions_Object28
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &717314772
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717314771}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: -13, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2070856059}
+--- !u!61 &717314773
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717314771}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: .5, y: -.5}
 --- !u!1 &717966085
 GameObject:
   m_ObjectHideFlags: 0
@@ -38612,6 +38702,44 @@ Sprite:
       height: 32
     textureRectOffset: {x: 0, y: 0}
     settingsRaw: 0
+--- !u!1 &844665570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 844665571}
+  - 61: {fileID: 844665572}
+  m_Layer: 0
+  m_Name: Collisions_Object27
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &844665571
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844665570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12, y: -11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2070856059}
+--- !u!61 &844665572
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 844665570}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1, y: 1}
+  m_Center: {x: .5, y: -.5}
 --- !u!213 &845755738
 Sprite:
   m_ObjectHideFlags: 0
@@ -58870,7 +58998,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331295725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2070856059}
@@ -92237,6 +92365,7 @@ Transform:
   - {fileID: 23215186}
   - {fileID: 1965095754}
   - {fileID: 234681920}
+  - {fileID: 844665571}
   - {fileID: 1723950097}
   - {fileID: 716137414}
   - {fileID: 1616680388}
@@ -92248,6 +92377,7 @@ Transform:
   - {fileID: 922961099}
   - {fileID: 1968306694}
   - {fileID: 1376413899}
+  - {fileID: 717314772}
   - {fileID: 247367160}
   m_Father: {fileID: 1331295726}
 --- !u!1 &2071522039
