@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mover.cs" />
      <Compile Include="Assets\Player Movment Assets\MovementNew.cs" />
      <Compile Include="Assets\Resources\Utilities\AnimatedTile.cs" />
      <Compile Include="Assets\Resources\Utilities\AnimatedTileTestScript.cs" />
@@ -81,6 +80,7 @@
      <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
+     <Compile Include="Assets\mover2.cs" />
      <Compile Include="Assets\playerController.cs" />
      <Compile Include="Assets\playerhealth.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
