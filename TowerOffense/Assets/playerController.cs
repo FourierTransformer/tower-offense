@@ -3,8 +3,12 @@ using System.Collections;
 
 public class playerController : MonoBehaviour {
 
+	public GameObject shot;
+	public Transform shotSpawn;
+	public float firerate;
+
 	private Animator animator;
-	//public AnimationClip attack_north, attack_south, attack_east, attack_west;
+
 	// Use this for initialization
 	void Start () {
 		animator = this.GetComponent<Animator>();
@@ -26,7 +30,9 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
+				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 				animator.SetInteger("BowAttack", 2);
+
 			}
 			if(Input.GetMouseButtonUp(1)){
 				animator.SetInteger("BowAttack", -1);
@@ -43,6 +49,7 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
+				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 				animator.SetInteger("BowAttack", 0);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -60,6 +67,7 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
+				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 				animator.SetInteger("BowAttack", 3);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -77,6 +85,7 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
+				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 				animator.SetInteger("BowAttack", 1);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -93,6 +102,7 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
+				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
 				animator.SetInteger("BowAttack", animator.GetInteger("Direction"));
 			}
 			if(Input.GetMouseButtonUp(1)){
