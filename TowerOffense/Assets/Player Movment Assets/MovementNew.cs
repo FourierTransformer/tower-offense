@@ -7,6 +7,7 @@ public class MovementNew : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		float x = Input.GetAxis ("Horizontal") * Time.deltaTime * speed;
 		float y = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 
