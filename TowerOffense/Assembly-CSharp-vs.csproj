@@ -79,6 +79,7 @@
      <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
+     <Compile Include="Assets\flameRotate.cs" />
      <Compile Include="Assets\playerController.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Resources\Examples\small_test-new-features.xml" />

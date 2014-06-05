@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Flametower_0
+  m_Name: flametowerAnimationController
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -26,7 +26,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: tower_spin
-  m_Speed: .400000006
+  m_Speed: .200000003
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 4b2462b3ce7f51b49b0b79b4d24d56e7, type: 2}
