@@ -27949,7 +27949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: 87124a0c20403ba488e4ec89f07e3951, type: 2}
-  shotSpawn: {fileID: 597986572}
   firerate: 0
 --- !u!95 &597986570
 Animator:

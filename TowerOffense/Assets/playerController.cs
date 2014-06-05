@@ -4,7 +4,6 @@ using System.Collections;
 public class playerController : MonoBehaviour {
 
 	public GameObject shot;
-	public Transform shotSpawn;
 	public float firerate;
 
 	private Animator animator;
