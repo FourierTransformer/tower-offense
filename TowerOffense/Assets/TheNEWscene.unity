@@ -8311,7 +8311,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300156, guid: cda7db4851c92f741b925c92e642f5ab, type: 3}
+  m_Sprite: {fileID: 21300156, guid: e2b03ecb6b06e624ca58f8c896761ce1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &194477127
 Transform:
@@ -9130,6 +9130,14 @@ Prefab:
       objectReference: {fileID: 597986572}
     - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
+      propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13814,7 +13822,17 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5800000, guid: aa7002d0050556a4eb0b131d17859a09, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: aa7002d0050556a4eb0b131d17859a09, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300156, guid: e2b03ecb6b06e624ca58f8c896761ce1,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 5800000, guid: aa7002d0050556a4eb0b131d17859a09, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: aa7002d0050556a4eb0b131d17859a09, type: 2}
   m_RootGameObject: {fileID: 194477124}
   m_IsPrefabParent: 0
@@ -47504,7 +47522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1047665136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22, y: -16, z: 0}
+  m_LocalPosition: {x: 22.0476627, y: -16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 247367160}

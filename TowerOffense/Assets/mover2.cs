@@ -3,9 +3,10 @@ using System.Collections;
 
 public class mover2 : MonoBehaviour {
 
-	public float speed = 3.0f;
-	// Update is called once per frame
-	void Start () {
-		rigidbody2D.velocity = transform.up * speed;
+	public float speed = 8.0f;
+
+	void Update(){
+		rigidbody2D.AddForce (transform.up * speed);
 	}
+
 }

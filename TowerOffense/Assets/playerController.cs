@@ -18,7 +18,7 @@ public class playerController : MonoBehaviour {
 	void Update () {
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
-		
+		Vector2 shotLook = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 		if (vertical > 0)
 		{
 			animator.SetInteger("Direction", 2);
@@ -30,7 +30,14 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
-				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				//Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				var screenPos = Input.mousePosition;
+				screenPos.z = transform.position.z - Camera.main.transform.position.z;
+				var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+
+				var q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+				var go = Instantiate(shot, transform.position, q);
+
 				animator.SetInteger("BowAttack", 2);
 
 			}
@@ -49,7 +56,13 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
-				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				//Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				var screenPos = Input.mousePosition;
+				screenPos.z = transform.position.z - Camera.main.transform.position.z;
+				var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+				
+				var q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+				var go = Instantiate(shot, transform.position, q);
 				animator.SetInteger("BowAttack", 0);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -67,7 +80,13 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
-				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				//Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				var screenPos = Input.mousePosition;
+				screenPos.z = transform.position.z - Camera.main.transform.position.z;
+				var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+				
+				var q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+				var go = Instantiate(shot, transform.position, q);
 				animator.SetInteger("BowAttack", 3);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -85,7 +104,13 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
-				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				//Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				var screenPos = Input.mousePosition;
+				screenPos.z = transform.position.z - Camera.main.transform.position.z;
+				var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+				
+				var q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+				var go = Instantiate(shot, transform.position, q);
 				animator.SetInteger("BowAttack", 1);
 			}
 			if(Input.GetMouseButtonUp(1)){
@@ -102,7 +127,13 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("Attack", -1);
 			}
 			if(Input.GetMouseButtonDown(1)){
-				Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				//Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+				var screenPos = Input.mousePosition;
+				screenPos.z = transform.position.z - Camera.main.transform.position.z;
+				var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+				
+				var q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+				var go = Instantiate(shot, transform.position, q);
 				animator.SetInteger("BowAttack", animator.GetInteger("Direction"));
 			}
 			if(Input.GetMouseButtonUp(1)){

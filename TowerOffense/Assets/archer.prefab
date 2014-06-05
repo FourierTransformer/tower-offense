@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 95: {fileID: 9500000}
+  - 58: {fileID: 5800000}
   m_Layer: 0
   m_Name: archer
   m_TagString: Untagged
@@ -28,6 +29,17 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!58 &5800000
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .200000003
+  m_Center: {x: 0, y: -.0500000007}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -63,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300156, guid: cda7db4851c92f741b925c92e642f5ab, type: 3}
+  m_Sprite: {fileID: 21300156, guid: e2b03ecb6b06e624ca58f8c896761ce1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
