@@ -80,6 +80,7 @@
      <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
      <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
+     <Compile Include="Assets\enemyhealth.cs" />
      <Compile Include="Assets\mover2.cs" />
      <Compile Include="Assets\playerController.cs" />
      <Compile Include="Assets\playerhealth.cs" />

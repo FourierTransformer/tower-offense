@@ -2473,6 +2473,7 @@ GameObject:
   - 212: {fileID: 60281019}
   - 95: {fileID: 60281018}
   - 58: {fileID: 60281021}
+  - 114: {fileID: 60281022}
   m_Layer: 0
   m_Name: meleemonster
   m_TagString: Untagged
@@ -2541,6 +2542,18 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .200000003
   m_Center: {x: 0, y: -.0500000007}
+--- !u!114 &60281022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60281017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &61555905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,6 +4626,7 @@ GameObject:
   - 212: {fileID: 105982976}
   - 95: {fileID: 105982975}
   - 58: {fileID: 105982978}
+  - 114: {fileID: 105982979}
   m_Layer: 0
   m_Name: landminedropper
   m_TagString: Untagged
@@ -4681,6 +4695,18 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .200000003
   m_Center: {x: 0, y: -.0500000007}
+--- !u!114 &105982979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 105982974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &107991415
 GameObject:
   m_ObjectHideFlags: 0
@@ -15244,6 +15270,7 @@ GameObject:
   - 212: {fileID: 327359982}
   - 95: {fileID: 327359981}
   - 58: {fileID: 327359980}
+  - 114: {fileID: 327359984}
   m_Layer: 0
   m_Name: archer
   m_TagString: Untagged
@@ -15313,6 +15340,18 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &327359984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327359979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &327797486
 GameObject:
   m_ObjectHideFlags: 0
@@ -19398,6 +19437,7 @@ GameObject:
   - 212: {fileID: 413574485}
   - 95: {fileID: 413574484}
   - 58: {fileID: 413574483}
+  - 114: {fileID: 413574487}
   m_Layer: 0
   m_Name: wallhugger
   m_TagString: Untagged
@@ -19466,6 +19506,18 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &413574487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 413574482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &414192684
 GameObject:
   m_ObjectHideFlags: 0
@@ -29361,6 +29413,7 @@ GameObject:
   - 212: {fileID: 625064796}
   - 95: {fileID: 625064795}
   - 58: {fileID: 625064798}
+  - 114: {fileID: 625064799}
   m_Layer: 0
   m_Name: grenadier
   m_TagString: Untagged
@@ -29429,6 +29482,18 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .200000003
   m_Center: {x: 0, y: -.0500000007}
+--- !u!114 &625064799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 625064794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &625302650
 GameObject:
   m_ObjectHideFlags: 0
@@ -58511,6 +58576,7 @@ GameObject:
   - 212: {fileID: 1318347540}
   - 95: {fileID: 1318347539}
   - 58: {fileID: 1318347538}
+  - 114: {fileID: 1318347542}
   m_Layer: 0
   m_Name: suicidebomber
   m_TagString: Untagged
@@ -58579,6 +58645,18 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1318347542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318347537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7e555190855e5f4cbdb5e3ef6e30eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &1318956042
 GameObject:
   m_ObjectHideFlags: 0

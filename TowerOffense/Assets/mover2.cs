@@ -4,11 +4,16 @@ using System.Collections;
 public class mover2 : MonoBehaviour {
 
 	public float speed = 8.0f;
+	
+	private enemyhealth enemyHealth;
 
 	void OnTriggerEnter2D(Collider2D collision){
 		if (collision.gameObject.name == "meleemonster" || collision.gameObject.name == "archer" ||
 		    collision.gameObject.name == "grenadier" || collision.gameObject.name == "landminedropper" || 
 		    collision.gameObject.name == "suicidebomber" || collision.gameObject.name == "wallhugger") {
+			enemyHealth = collision.gameObject.GetComponent<enemyhealth>();
+			float damage = 10f;
+			enemyHealth.TakeDamage(damage);
 			Destroy(gameObject);
 		}
 		
