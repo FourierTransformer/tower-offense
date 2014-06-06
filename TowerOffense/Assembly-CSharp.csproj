@@ -83,6 +83,7 @@
      <Compile Include="Assets\mover2.cs" />
      <Compile Include="Assets\playerController.cs" />
      <Compile Include="Assets\playerhealth.cs" />
+     <Compile Include="Assets\walltriggerscript.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Resources\Examples\small_test-new-features.xml" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />

@@ -17,7 +17,6 @@ public class playerController : MonoBehaviour {
 	void Update () {
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
-		Vector2 shotLook = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
 		if (vertical > 0)
 		{
 			animator.SetInteger("Direction", 2);

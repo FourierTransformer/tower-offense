@@ -16259,6 +16259,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 341886352}
   - 61: {fileID: 341886353}
+  - 114: {fileID: 341886354}
   m_Layer: 0
   m_Name: Collisions_Object
   m_TagString: Untagged
@@ -16288,6 +16289,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 4, y: 7}
   m_Center: {x: 2, y: -3.5}
+--- !u!114 &341886354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 341886351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8239426c56e2a4c84de94cf31c9f6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343628573
 GameObject:
   m_ObjectHideFlags: 0
