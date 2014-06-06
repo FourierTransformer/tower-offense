@@ -1,6 +1,6 @@
 #pragma strict
 
-var speed = 5.0;
+public var speed = 5.0;
 
 function Start () {
 
