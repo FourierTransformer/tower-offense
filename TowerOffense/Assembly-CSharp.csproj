@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scenes\BackButtonScript.cs" />
      <Compile Include="Assets\Scenes\CameraController.cs" />
      <Compile Include="Assets\Scenes\StartingSceneScript.cs" />
+     <Compile Include="Assets\SpawnController.cs" />
      <Compile Include="Assets\X-UniTMX Example\Scripts\Camera\CameraFolow2D.cs" />
      <Compile Include="Assets\X-UniTMX Example\Scripts\Character\Character2DController.cs" />
      <Compile Include="Assets\X-UniTMX Example\Scripts\Character\RespawnPoint.cs" />

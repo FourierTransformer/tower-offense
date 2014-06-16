@@ -58577,6 +58577,7 @@ GameObject:
   - 95: {fileID: 1318347539}
   - 58: {fileID: 1318347538}
   - 114: {fileID: 1318347542}
+  - 114: {fileID: 1318347543}
   m_Layer: 0
   m_Name: suicidebomber
   m_TagString: Untagged
@@ -58657,6 +58658,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1318347543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1318347537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d04233fcce12f2469a79535c78c770d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
+  enemy2: {fileID: 0}
+  spawnValues: {x: 25, y: -20, z: 0}
+  spawnValues2: {x: 0, y: 0, z: 0}
+  enemyCount: 0
+  enemyCount2: 0
+  HealthModifier: 0
+  SpeedModifier: 0
+  levelWait: 0
 --- !u!1 &1318956042
 GameObject:
   m_ObjectHideFlags: 0
@@ -77594,6 +77615,53 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 2059122428}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1716350656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1716350658}
+  - 114: {fileID: 1716350657}
+  m_Layer: 0
+  m_Name: SpawnController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1716350657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716350656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d04233fcce12f2469a79535c78c770d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 100000, guid: aa7002d0050556a4eb0b131d17859a09, type: 2}
+  enemy2: {fileID: 100000, guid: 10774df301ca33e47ad5acca4df7b0ef, type: 2}
+  spawnValues: {x: 25, y: -20, z: 0}
+  spawnValues2: {x: 25, y: -15, z: 0}
+  enemyCount: 1
+  enemyCount2: 1
+  HealthModifier: 0
+  SpeedModifier: 0
+  levelWait: 2
+--- !u!4 &1716350658
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1716350656}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1717010586
 GameObject:
   m_ObjectHideFlags: 0
