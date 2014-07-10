@@ -1,6 +1,55 @@
 fileFormatVersion: 2
 guid: 2e6e60df8d03a914b8e89c8ebe244ae8
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: BombExplosion_0
+    21300002: BombExplosion_1
+    21300004: BombExplosion_2
+    21300006: BombExplosion_3
+    21300008: BombExplosion_4
+    21300010: BombExplosion_5
+    21300012: BombExplosion_6
+    21300014: BombExplosion_7
+    21300016: BombExplosion_8
+    21300018: BombExplosion_9
+    21300020: BombExplosion_10
+    21300022: BombExplosion_11
+    21300024: BombExplosion_12
+    21300026: BombExplosion_13
+    21300028: BombExplosion_14
+    21300030: BombExplosion_15
+    21300032: BombExplosion_16
+    21300034: BombExplosion_17
+    21300036: BombExplosion_18
+    21300038: BombExplosion_19
+    21300040: BombExplosion_20
+    21300042: BombExplosion_21
+    21300044: BombExplosion_22
+    21300046: BombExplosion_23
+    21300048: BombExplosion_24
+    21300050: BombExplosion_25
+    21300052: BombExplosion_26
+    21300054: BombExplosion_27
+    21300056: BombExplosion_28
+    21300058: BombExplosion_29
+    21300060: BombExplosion_30
+    21300062: BombExplosion_31
+    21300064: BombExplosion_32
+    21300066: BombExplosion_33
+    21300068: BombExplosion_34
+    21300070: BombExplosion_35
+    21300072: BombExplosion_36
+    21300074: BombExplosion_37
+    21300076: BombExplosion_38
+    21300078: BombExplosion_39
+    21300080: BombExplosion_40
+    21300082: BombExplosion_41
+    21300084: BombExplosion_42
+    21300086: BombExplosion_43
+    21300088: BombExplosion_44
+    21300090: BombExplosion_45
+    21300092: BombExplosion_46
+    21300094: BombExplosion_47
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +104,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_1
       rect:
         serializedVersion: 2
@@ -63,6 +114,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_2
       rect:
         serializedVersion: 2
@@ -72,6 +124,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_3
       rect:
         serializedVersion: 2
@@ -81,6 +134,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_4
       rect:
         serializedVersion: 2
@@ -90,6 +144,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_5
       rect:
         serializedVersion: 2
@@ -99,6 +154,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_6
       rect:
         serializedVersion: 2
@@ -108,6 +164,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_7
       rect:
         serializedVersion: 2
@@ -117,6 +174,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_8
       rect:
         serializedVersion: 2
@@ -126,6 +184,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_9
       rect:
         serializedVersion: 2
@@ -135,6 +194,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_10
       rect:
         serializedVersion: 2
@@ -144,6 +204,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_11
       rect:
         serializedVersion: 2
@@ -153,6 +214,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_12
       rect:
         serializedVersion: 2
@@ -162,6 +224,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_13
       rect:
         serializedVersion: 2
@@ -171,6 +234,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_14
       rect:
         serializedVersion: 2
@@ -180,6 +244,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_15
       rect:
         serializedVersion: 2
@@ -189,6 +254,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_16
       rect:
         serializedVersion: 2
@@ -198,6 +264,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_17
       rect:
         serializedVersion: 2
@@ -207,6 +274,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_18
       rect:
         serializedVersion: 2
@@ -216,6 +284,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_19
       rect:
         serializedVersion: 2
@@ -225,6 +294,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_20
       rect:
         serializedVersion: 2
@@ -234,6 +304,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_21
       rect:
         serializedVersion: 2
@@ -243,6 +314,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_22
       rect:
         serializedVersion: 2
@@ -252,6 +324,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_23
       rect:
         serializedVersion: 2
@@ -261,6 +334,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_24
       rect:
         serializedVersion: 2
@@ -270,6 +344,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_25
       rect:
         serializedVersion: 2
@@ -279,6 +354,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_26
       rect:
         serializedVersion: 2
@@ -288,6 +364,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_27
       rect:
         serializedVersion: 2
@@ -297,6 +374,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_28
       rect:
         serializedVersion: 2
@@ -306,6 +384,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_29
       rect:
         serializedVersion: 2
@@ -315,6 +394,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_30
       rect:
         serializedVersion: 2
@@ -324,6 +404,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_31
       rect:
         serializedVersion: 2
@@ -333,6 +414,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_32
       rect:
         serializedVersion: 2
@@ -342,6 +424,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_33
       rect:
         serializedVersion: 2
@@ -351,6 +434,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_34
       rect:
         serializedVersion: 2
@@ -360,6 +444,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_35
       rect:
         serializedVersion: 2
@@ -369,6 +454,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_36
       rect:
         serializedVersion: 2
@@ -378,6 +464,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_37
       rect:
         serializedVersion: 2
@@ -387,6 +474,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_38
       rect:
         serializedVersion: 2
@@ -396,6 +484,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_39
       rect:
         serializedVersion: 2
@@ -405,6 +494,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_40
       rect:
         serializedVersion: 2
@@ -414,6 +504,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_41
       rect:
         serializedVersion: 2
@@ -423,6 +514,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_42
       rect:
         serializedVersion: 2
@@ -432,6 +524,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_43
       rect:
         serializedVersion: 2
@@ -441,6 +534,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_44
       rect:
         serializedVersion: 2
@@ -450,6 +544,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_45
       rect:
         serializedVersion: 2
@@ -459,6 +554,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_46
       rect:
         serializedVersion: 2
@@ -468,6 +564,7 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: BombExplosion_47
       rect:
         serializedVersion: 2
@@ -477,5 +574,6 @@ TextureImporter:
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

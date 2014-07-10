@@ -11,7 +11,7 @@ public class enemyhealth : MonoBehaviour {
 	private Animator anim;
 	
 	void Start(){
-		healthBarLength = Screen.width/8;
+		healthBarLength = 45;
 	}
 	
 	void Update () {
@@ -27,13 +27,15 @@ public class enemyhealth : MonoBehaviour {
 	}
 	
 	void OnGUI() {
+	if(health < maxHealth){
 		Vector2 targetPos;
 		targetPos = Camera.main.WorldToScreenPoint(transform.position);
-		GUI.Box(new Rect(targetPos.x-65, Screen.height-(targetPos.y+30), healthBarLength, 20), health/maxHealth*100 + "%");
+		GUI.Box(new Rect(targetPos.x-22, Screen.height-(targetPos.y+20), healthBarLength, 5),"");
+		}
 	}
 
 	public void AdjustCurrentHealth(){
-		healthBarLength = (Screen.width/8) * (health/maxHealth);
+		healthBarLength = 45 * (health/maxHealth);
 	}
 	
 	void EnemyDying(){

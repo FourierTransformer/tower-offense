@@ -1,6 +1,11 @@
 fileFormatVersion: 2
 guid: 4ef8f2a086edd4f41bda8bb2aebeff54
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: plasmaballl_0
+    21300002: plasmaballl_1
+    21300004: plasmaballl_2
+    21300006: plasmaballl_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +40,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +60,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: plasmaballl_1
       rect:
         serializedVersion: 2
@@ -63,6 +70,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: plasmaballl_2
       rect:
         serializedVersion: 2
@@ -72,6 +80,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: plasmaballl_3
       rect:
         serializedVersion: 2
@@ -81,5 +90,6 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
