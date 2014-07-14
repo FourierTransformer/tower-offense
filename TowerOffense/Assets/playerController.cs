@@ -47,7 +47,6 @@ public class playerController : MonoBehaviour {
 		
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
-		//if (vertical > 0)
 		if((q.z >= -0.5F && q.z <= 0.5F) && q.w > 0.8F)  
 		{
 			animator.SetInteger("Direction", 2);
@@ -83,7 +82,6 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		//else if (vertical < 0)
 		else if ((q.w >= -0.5F && q.w <= 0.4F) && q.z > 0.9F)
 		{
 			animator.SetInteger("Direction", 0);
@@ -118,7 +116,6 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		//else if (horizontal > 0)
 		else if(q.z <= -0.5F && q.w > 0.5F)
 		{
 			animator.SetInteger("Direction", 3);
@@ -153,7 +150,6 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		//else if (horizontal < 0)
 		else if((q.z >= 0.5F && q.z <= 0.9F) && q.w >= 0.4F)
 		{
 			animator.SetInteger("Direction", 1);
