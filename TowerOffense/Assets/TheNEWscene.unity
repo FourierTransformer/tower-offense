@@ -2558,6 +2558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &61555905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +4721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &107991415
 GameObject:
   m_ObjectHideFlags: 0
@@ -15388,6 +15390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!131 &327359985
 GUITexture:
   m_ObjectHideFlags: 0
@@ -19582,6 +19585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &414192684
 GameObject:
   m_ObjectHideFlags: 0
@@ -29684,6 +29688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &625302650
 GameObject:
   m_ObjectHideFlags: 0
@@ -59009,6 +59014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &1318956042
 GameObject:
   m_ObjectHideFlags: 0

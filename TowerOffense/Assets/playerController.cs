@@ -145,11 +145,11 @@ public class playerController : MonoBehaviour {
 	}
 		
 	void Melee(){
-		Vector3 pos = transform.position;
+		Vector2 pos = transform.position;
 		for(int i = 0; i < nearEnemy.Count; i++){
-			Vector3 vec = nearEnemy[i].transform.position;
-			Vector3 dir = vec - pos;
-			if(Vector3.Dot(dir, transform.forward)<0.7){
+			Vector2 vec = nearEnemy[i].transform.position;
+			Vector2 dir = vec - pos;
+			if(Vector2.Dot(dir, transform.up) < 0){
 				nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
 				if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
 					nearEnemy.Remove(nearEnemy[i]);
