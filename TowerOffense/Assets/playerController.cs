@@ -32,9 +32,9 @@ public class playerController : MonoBehaviour {
 			}
 		}	
 		
-	void OnGUI(){
+	/*void OnGUI(){
 			GUI.Box(new Rect(10,10,150,20), q + "");
-		}
+		}*/
 
 	// Update is called once per frame
 	void Update () {
@@ -57,7 +57,18 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				Melee();
+				//Melee();
+				Vector2 pos = transform.position;
+				for(int i = 0; i < nearEnemy.Count; i++){
+					Vector2 vec = nearEnemy[i].transform.position;
+					Vector2 dir = vec - pos;
+					if(Vector2.Dot(dir, transform.up) < .7){
+						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
+						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
+							nearEnemy.Remove(nearEnemy[i]);
+						}
+					}
+				}
 				animator.SetInteger("Attack", 2);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -73,7 +84,7 @@ public class playerController : MonoBehaviour {
 			}
 		}
 		//else if (vertical < 0)
-		else if ((q.w >= -0.5F && q.w <= 0.5F) && q.z > 0.8F)
+		else if ((q.w >= -0.5F && q.w <= 0.4F) && q.z > 0.9F)
 		{
 			animator.SetInteger("Direction", 0);
 			if(vertical != 0 || horizontal != 0){
@@ -82,7 +93,18 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				Melee();
+				//Melee();
+				Vector2 pos = transform.position;
+				for(int i = 0; i < nearEnemy.Count; i++){
+					Vector2 vec = nearEnemy[i].transform.position;
+					Vector2 dir = vec - pos;
+					if(Vector2.Dot(dir, transform.up) < -.7){
+						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
+						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
+							nearEnemy.Remove(nearEnemy[i]);
+						}
+					}
+				}
 				animator.SetInteger("Attack", 0);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -106,7 +128,18 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				Melee();
+				//Melee();
+				Vector2 pos = transform.position;
+				for(int i = 0; i < nearEnemy.Count; i++){
+					Vector2 vec = nearEnemy[i].transform.position;
+					Vector2 dir = vec - pos;
+					if(Vector2.Dot(dir, transform.up) > -.2 && Vector2.Dot(dir, transform.up) < .2){
+						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
+						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
+							nearEnemy.Remove(nearEnemy[i]);
+						}
+					}
+				}
 				animator.SetInteger("Attack", 3);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -121,7 +154,7 @@ public class playerController : MonoBehaviour {
 			}
 		}
 		//else if (horizontal < 0)
-		else if((q.z >= 0.5F && q.z <= 0.9F) && q.w > 0.5F)
+		else if((q.z >= 0.5F && q.z <= 0.9F) && q.w >= 0.4F)
 		{
 			animator.SetInteger("Direction", 1);
 			if(vertical != 0 || horizontal != 0){
@@ -130,7 +163,18 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				Melee();
+				//Melee();
+				Vector2 pos = transform.position;
+				for(int i = 0; i < nearEnemy.Count; i++){
+					Vector2 vec = nearEnemy[i].transform.position;
+					Vector2 dir = vec - pos;
+					if(Vector2.Dot(dir, transform.up) > -.2 && Vector2.Dot(dir, transform.up) < .2){
+						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
+						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
+							nearEnemy.Remove(nearEnemy[i]);
+						}
+					}
+				}								
 				animator.SetInteger("Attack", 1);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -144,26 +188,8 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		/*else
-		{
-			animator.SetFloat("Change", 0.0f);
-			if(Input.GetMouseButtonDown(0)){
-				Melee();
-				animator.SetInteger("Attack", animator.GetInteger("Direction"));
-			}
-			if(Input.GetMouseButtonUp(0)){
-				animator.SetInteger("Attack", -1);
-			}
-			if(Input.GetMouseButtonDown(1)){
-				Bow();
-				animator.SetInteger("BowAttack", animator.GetInteger("Direction"));
-			}
-			if(Input.GetMouseButtonUp(1)){
-				animator.SetInteger("BowAttack", -1);
-			}
-		}*/
-		
 	}
+	
 	
 	void Bow(){
 		var screenPos = Input.mousePosition;
