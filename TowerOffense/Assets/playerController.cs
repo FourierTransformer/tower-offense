@@ -9,6 +9,7 @@ public class playerController : MonoBehaviour {
 
 	private Animator animator;
 	private List<GameObject> nearEnemy = new List<GameObject>();
+	private Quaternion q;
 
 	// Use this for initialization
 	void Start () {
@@ -31,16 +32,30 @@ public class playerController : MonoBehaviour {
 			}
 		}	
 		
+	void OnGUI(){
+			GUI.Box(new Rect(10,10,150,20), q + "");
+		}
 
 	// Update is called once per frame
 	void Update () {
 	
+		var screenPos = Input.mousePosition;
+		screenPos.z = transform.position.z - Camera.main.transform.position.z;
+		var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+		q = Quaternion.FromToRotation(Vector3.up, worldPos - transform.position);
+		
+		
 		var vertical = Input.GetAxis("Vertical");
 		var horizontal = Input.GetAxis("Horizontal");
-		if (vertical > 0)
+		//if (vertical > 0)
+		if((q.z >= -0.5F && q.z <= 0.5F) && q.w > 0.8F)  
 		{
 			animator.SetInteger("Direction", 2);
-			animator.SetFloat("Change", 1.0f);
+			if(vertical != 0 || horizontal != 0){
+				animator.SetFloat("Change", 1.0f);
+			} else {
+				animator.SetFloat("Change", 0.0f);
+			}
 			if(Input.GetMouseButtonDown(0)){
 				Melee();
 				animator.SetInteger("Attack", 2);
@@ -57,10 +72,15 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		else if (vertical < 0)
+		//else if (vertical < 0)
+		else if ((q.w >= -0.5F && q.w <= 0.5F) && q.z > 0.8F)
 		{
 			animator.SetInteger("Direction", 0);
-			animator.SetFloat("Change", 1.0f);
+			if(vertical != 0 || horizontal != 0){
+				animator.SetFloat("Change", 1.0f);
+			} else {
+				animator.SetFloat("Change", 0.0f);
+			}
 			if(Input.GetMouseButtonDown(0)){
 				Melee();
 				animator.SetInteger("Attack", 0);
@@ -76,10 +96,15 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		else if (horizontal > 0)
+		//else if (horizontal > 0)
+		else if(q.z <= -0.5F && q.w > 0.5F)
 		{
 			animator.SetInteger("Direction", 3);
-			animator.SetFloat("Change", 1.0f);
+			if(vertical != 0 || horizontal != 0){
+				animator.SetFloat("Change", 1.0f);
+			} else {
+				animator.SetFloat("Change", 0.0f);
+			}
 			if(Input.GetMouseButtonDown(0)){
 				Melee();
 				animator.SetInteger("Attack", 3);
@@ -95,10 +120,15 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		else if (horizontal < 0)
+		//else if (horizontal < 0)
+		else if((q.z >= 0.5F && q.z <= 0.9F) && q.w > 0.5F)
 		{
 			animator.SetInteger("Direction", 1);
-			animator.SetFloat("Change", 1.0f);
+			if(vertical != 0 || horizontal != 0){
+				animator.SetFloat("Change", 1.0f);
+			} else {
+				animator.SetFloat("Change", 0.0f);
+			}
 			if(Input.GetMouseButtonDown(0)){
 				Melee();
 				animator.SetInteger("Attack", 1);
@@ -114,7 +144,7 @@ public class playerController : MonoBehaviour {
 				animator.SetInteger("BowAttack", -1);
 			}
 		}
-		else
+		/*else
 		{
 			animator.SetFloat("Change", 0.0f);
 			if(Input.GetMouseButtonDown(0)){
@@ -131,7 +161,7 @@ public class playerController : MonoBehaviour {
 			if(Input.GetMouseButtonUp(1)){
 				animator.SetInteger("BowAttack", -1);
 			}
-		}
+		}*/
 		
 	}
 	
