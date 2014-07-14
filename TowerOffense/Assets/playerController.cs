@@ -56,18 +56,7 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				//Melee();
-				Vector2 pos = transform.position;
-				for(int i = 0; i < nearEnemy.Count; i++){
-					Vector2 vec = nearEnemy[i].transform.position;
-					Vector2 dir = vec - pos;
-					if(Vector2.Dot(dir, transform.up) < .7){
-						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
-						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
-							nearEnemy.Remove(nearEnemy[i]);
-						}
-					}
-				}
+				Melee();
 				animator.SetInteger("Attack", 2);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -91,18 +80,7 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				//Melee();
-				Vector2 pos = transform.position;
-				for(int i = 0; i < nearEnemy.Count; i++){
-					Vector2 vec = nearEnemy[i].transform.position;
-					Vector2 dir = vec - pos;
-					if(Vector2.Dot(dir, transform.up) < -.7){
-						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
-						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
-							nearEnemy.Remove(nearEnemy[i]);
-						}
-					}
-				}
+				Melee();
 				animator.SetInteger("Attack", 0);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -125,18 +103,7 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				//Melee();
-				Vector2 pos = transform.position;
-				for(int i = 0; i < nearEnemy.Count; i++){
-					Vector2 vec = nearEnemy[i].transform.position;
-					Vector2 dir = vec - pos;
-					if(Vector2.Dot(dir, transform.up) > -.2 && Vector2.Dot(dir, transform.up) < .2){
-						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
-						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
-							nearEnemy.Remove(nearEnemy[i]);
-						}
-					}
-				}
+				Melee();
 				animator.SetInteger("Attack", 3);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -159,18 +126,7 @@ public class playerController : MonoBehaviour {
 				animator.SetFloat("Change", 0.0f);
 			}
 			if(Input.GetMouseButtonDown(0)){
-				//Melee();
-				Vector2 pos = transform.position;
-				for(int i = 0; i < nearEnemy.Count; i++){
-					Vector2 vec = nearEnemy[i].transform.position;
-					Vector2 dir = vec - pos;
-					if(Vector2.Dot(dir, transform.up) > -.2 && Vector2.Dot(dir, transform.up) < .2){
-						nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
-						if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
-							nearEnemy.Remove(nearEnemy[i]);
-						}
-					}
-				}								
+				Melee();						
 				animator.SetInteger("Attack", 1);
 			}
 			if(Input.GetMouseButtonUp(0)){
@@ -197,11 +153,15 @@ public class playerController : MonoBehaviour {
 	}
 		
 	void Melee(){
+		var screenPos = Input.mousePosition;
+		screenPos.z = transform.position.z - Camera.main.transform.position.z;
+		var worldPos = Camera.main.ScreenToWorldPoint(screenPos);
+		
 		Vector2 pos = transform.position;
 		for(int i = 0; i < nearEnemy.Count; i++){
 			Vector2 vec = nearEnemy[i].transform.position;
 			Vector2 dir = vec - pos;
-			if(Vector2.Dot(dir, transform.up) < 0){
+			if(Vector2.Dot(dir, worldPos - transform.position) > .7){
 				nearEnemy[i].GetComponent<enemyhealth>().TakeDamage(damage);
 				if(nearEnemy[i].GetComponent<enemyhealth>().health < 0f){
 					nearEnemy.Remove(nearEnemy[i]);
