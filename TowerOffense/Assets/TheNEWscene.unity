@@ -2531,7 +2531,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!58 &60281021
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2558,6 +2558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &61555905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,6 +4721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &107991415
 GameObject:
   m_ObjectHideFlags: 0
@@ -9057,11 +9059,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 21.7432671
+      value: 21.6190205
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -18.3916187
+      value: -18.5731983
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9102,6 +9104,10 @@ Prefab:
     - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 77d1306c1de9b42a3a49ddba940e67c4, type: 2}
@@ -15384,6 +15390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!131 &327359985
 GUITexture:
   m_ObjectHideFlags: 0
@@ -19578,6 +19585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &414192684
 GameObject:
   m_ObjectHideFlags: 0
@@ -28104,6 +28112,7 @@ GameObject:
   - 50: {fileID: 597986574}
   - 58: {fileID: 597986573}
   - 114: {fileID: 597986575}
+  - 58: {fileID: 597986576}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -28137,6 +28146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: 87124a0c20403ba488e4ec89f07e3951, type: 2}
+  damage: 15
 --- !u!95 &597986570
 Animator:
   serializedVersion: 3
@@ -28186,7 +28196,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!58 &597986573
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28197,8 +28207,8 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .209999993
-  m_Center: {x: 0, y: 0}
+  m_Radius: .239999995
+  m_Center: {x: 0, y: -.0199999996}
 --- !u!50 &597986574
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -28228,6 +28238,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!58 &597986576
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597986567}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Radius: .5
+  m_Center: {x: 0, y: -.0199999996}
 --- !u!1 &598972453
 GameObject:
   m_ObjectHideFlags: 0
@@ -29667,6 +29688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &625302650
 GameObject:
   m_ObjectHideFlags: 0
@@ -43853,6 +43875,18 @@ Prefab:
     - target: {fileID: 400000, guid: 89cc670701848a441ade5ee05b065ca1, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 89cc670701848a441ade5ee05b065ca1, type: 2}
+      propertyPath: m_Radius
+      value: .239999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 89cc670701848a441ade5ee05b065ca1, type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5800000, guid: 89cc670701848a441ade5ee05b065ca1, type: 2}
+      propertyPath: m_Center.y
+      value: -.0199999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89cc670701848a441ade5ee05b065ca1, type: 2}
@@ -58980,6 +59014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   healthBarLength: 0
+  maxHealth: 100
 --- !u!1 &1318956042
 GameObject:
   m_ObjectHideFlags: 0
@@ -87400,7 +87435,7 @@ Transform:
   m_PrefabInternal: {fileID: 214756626}
   m_GameObject: {fileID: 1951104883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.7432671, y: -18.3916187, z: -1}
+  m_LocalPosition: {x: 21.6190205, y: -18.5731983, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

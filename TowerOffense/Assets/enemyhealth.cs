@@ -6,7 +6,7 @@ public class enemyhealth : MonoBehaviour {
 	public float health = 100f;
 	public float healthBarLength;
 	
-	private float maxHealth = 100f;
+	public float maxHealth = 100f;
 	private bool enemyDead;
 	private Animator anim;
 	
