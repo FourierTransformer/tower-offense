@@ -19,7 +19,10 @@ public class SpawnController : MonoBehaviour
 	public float SpeedModifier;
 	public float levelWait;
 
-	/* get health to modify, don't spawn on lake, spawn all enemies without multiple for loops? */
+	/* get health to modify (not working), 
+	 * don't spawn on lake, 
+	 * spawn all enemies without multiple for loops? 
+	 * spawned enemies aren't hit by arrows */
 	void Start ()
 	{
 		StartCoroutine (SpawnWaves ());
@@ -30,11 +33,13 @@ public class SpawnController : MonoBehaviour
 		//yield return new WaitForSeconds (startWait);
 		while (true)
 		{
-			/*
+
 			if (HealthModifier > 0)
 			{
-				//enemy.health = HealthModifier * enemy.health;
+				//changes health by multiplying the modifier and current health
+				enemy.GetComponent<enemyhealth>().health = enemy.GetComponent<enemyhealth>().health * HealthModifier;
 			}
+			/*
 			if (SpeedModifier > 0)
 			{
 				enemy.speed = HealthModifier * enemy.speed;
